@@ -1,0 +1,4 @@
+The main factors of heart disease from the Public Health HD dataset would be:
+	- age
+	- cholesterol
+	- resting blood pressure
