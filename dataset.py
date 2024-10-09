@@ -1,5 +1,6 @@
 import csv
 import math
+import numpy as np
 
 dataset = []
 with open("heart.csv") as datasetfile:
@@ -9,10 +10,14 @@ with open("heart.csv") as datasetfile:
 
 slice_idx = math.ceil(len(dataset) / 2)
 
-# age -> 0idx, trestbps -> 3idx, chol -> 4idx
+xtrdataset = np.array(list(map(lambda arr: np.array(
+    [arr[0], arr[3], arr[4]]), dataset[0:slice_idx]))).T
 
-trdataset = list(
-    map(lambda arr: [arr[0], arr[3], arr[4], arr[13]], dataset[0:slice_idx]))
+ytrdataset = np.array(
+    list(map(lambda arr: arr[13], dataset[0:slice_idx]))).reshape(-1, 1).T
 
-tdataset = list(
-    map(lambda arr: [arr[0], arr[3], arr[4], arr[13]], dataset[(slice_idx+1):-1]))
+xtdataset = np.array(list(map(lambda arr: np.array(
+    [arr[0], arr[3], arr[4]]), dataset[(slice_idx+1):-1]))).T
+
+ytdataset = np.array(
+    list(map(lambda arr: arr[13], dataset[(slice_idx+1):-1]))).reshape(-1, 1).T
