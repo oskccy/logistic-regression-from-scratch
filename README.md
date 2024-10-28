@@ -147,8 +147,8 @@ To run the predictions, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/oskccy/linear-regression-from-scratch.git
-cd linear-regression-from-scratch
+git clone https://github.com/oskccy/logistic-regression-from-scratch.git
+cd logistic-regression-from-scratch
 
 # Install dependencies
 pip install -r requirements.txt
