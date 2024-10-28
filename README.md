@@ -1,6 +1,6 @@
 # Multiple Logistic Regression
 
-Here is my implementation of multiple logistic regression utilizing the sigmoid binding function, as well as batch gradient descent on the [Kaggle Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset), predicting wether a given patient will have heart disease based on age, cholesterol and resting heart rate as model weights.
+Here is my implementation of multiple logistic regression from scratch utilizing the sigmoid binding function, as well as batch gradient descent on the [Kaggle Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset), predicting wether a given patient will have heart disease based on age, cholesterol and resting heart rate as model weights.
 
 > By: [Oscar Sharaz Spencer](https://www.linkedin.com/in/oscar-sharaz/)
 
